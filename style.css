@@ -1,0 +1,93 @@
+/*|| TYPOGRAPHY */
+
+@font-face {
+	font-family: 'NeueBit';
+	src: url('assets/PPNeueBit-Regular.woff2');
+	font-weight: 400;
+ }
+
+@font-face {
+	font-family: 'NeueBit';
+	src: url('assets/PPNeueBit-Bold.woff2');
+	font-weight: 700;
+ }
+
+
+/* PARKING LOT FOR FONT NAMES */
+
+
+/*|| VARIABLES */ 
+
+/* FOR MOBILE */
+
+:root{
+    --border-radius:2vw;
+    --gap-spacing: 2em;
+  
+}
+
+/* || DESKTOP */
+
+@media (min-width:768px) {
+    :root {
+    --main-heading: 30px;
+    --gap-spacing: 2em;
+
+    --border-radius:1vw
+    }
+}
+
+/* || PARTS OF THE WEBSITE */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h2{
+    font-family: 'NeueBit';
+    font-weight: 700;
+    font-size: var(--main-heading);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+
+}]
+
+section.column{
+    display: grid;
+    flex-direction: column;
+    
+}
+
+section.row{
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--gap-spacing);
+
+}
+
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    margin-bottom: var(--gap-spacing);
+    border: 1px solid rgb(230, 224, 224);
+
+}
+
+img{
+    width: 100%;
+    margin-bottom: 1em;
+    object-fit: cover;
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+
+.description {
+    padding: 10px;
+}
